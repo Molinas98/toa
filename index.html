@@ -87,12 +87,17 @@
 					<img class="me-2" src="assets/img/icons/calendar.svg" alt="icono calendario">
 					<h2>Horarios de salidas y llegadas</h2>
 				</div>
-				<div class="tipos">
+				<!-- <div class="tipos">
 					<span>Llegadas</span>
 					<div class="salidas">
 						<span>Salidas</span>
 					</div>
-				</div>
+				</div> -->
+				<label for="filter" class="switch" aria-label="Toggle Filter">
+					<input type="checkbox" id="filter" />
+					<span>Llegadas</span>
+					<span>Salidas</span>
+				</label>
 			</div>
 			<div class="between-x flex-nowrap my-5">
 				<button class="btn-base activo">Todos</button>
@@ -232,11 +237,6 @@
 				</div>
 			</div>
 		</section>
-		<footer>
-			<div class="logo">
-				<img src="assets/img/logo.png" alt="icono logo">
-			</div>
-		</footer>
     </main>
 	<script src="assets/js/jquery-3.6.0.min.js"></script>
 	<script src="assets/js/bootstrap.bundle.min.js"></script>
