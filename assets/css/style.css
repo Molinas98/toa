@@ -314,6 +314,7 @@ nav .fecha {
 
 .banners-carrusel {
     overflow: hidden;
+    position: relative;
 }
 
 /*Main*/
@@ -597,6 +598,35 @@ input[type="date"] {
     opacity: 1;
 }
 
+.slick-dots {
+    position: absolute;
+    right: -200px;
+    bottom: 0;
+    height: 40px !important;
+}
+
+.carrusel-banners {
+    margin-bottom: 0 !important;
+}
+
+.slick-dots li {
+    margin-inline: 2px;
+}
+
+.slick-dots li button{
+    font-size: 15px !important;
+}
+
+.slick-dots li button:before {
+    font-size: 15px;
+    color: white;
+    opacity: 0.8;
+}
+
+.slick-dots li.slick-active button:before {
+    color: #8B857A;
+    font-size: 17px;
+}
 
 html {
     width: 100dvw !important;
