@@ -1,0 +1,515 @@
+@font-face {
+    font-family: 'Inter';
+    src: url("./fonts/Inter.ttf") format("opentype");
+}
+
+:root {
+    --white: #fff;
+    --black: #000000;
+    --primary: #0f9e72;
+    --secundary: #0f839e;
+    --yellow: #ffb44d;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+body {
+    min-height: 100dvh;
+    max-width: 100dvw;
+    overflow-x: hidden;
+    margin-inline: auto;
+    font-family: 'Inter';
+    font-size: 14px;
+    padding-inline: 7.5%;
+    background-color: #232323;
+    color: var(--white);
+}
+
+h1 {
+    font-size: 55px;
+    line-height: 1.27;
+    font-family: var(--ft-bold);
+    color: var(--title);
+}
+
+h2 {
+    font-size: 40px;
+    line-height: 1.27;
+    font-family: var(--ft-bold);
+    color: var(--title);
+}
+
+h3 {
+    font-size: 24px;
+    font-family: var(--ft-bold);
+    color: var(--title);
+    line-height: 1.3;
+}
+
+
+p {
+    margin: 0;
+}
+
+ul {
+    text-decoration: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*Negrita*/
+
+.fw-300{
+    font-weight: 300;
+}
+
+
+.fw-500{
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+/*Tamaños*/
+.ft-9 {
+    font-size: 9px;
+}
+
+.ft-10 {
+    font-size: 10px !important;
+}
+
+.ft-11 {
+    font-size: 11px !important;
+}
+
+.ft-12 {
+    font-size: 12px !important;
+}
+
+.ft-14 {
+    font-size: 14px !important;
+}
+
+/*Distribuciones*/
+
+.start-x, .start-y, .center-x, .center-y, 
+.between-x, .between-y, .end-y, .end-x, .around-x {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.start-y, .center-y, .between-y, .end-y {
+    flex-direction: column;
+}
+
+.start-x, .start-y {
+    justify-content: start;
+    align-items: start;
+}
+
+.center-x, .center-y {
+    justify-content: center;
+    align-items: center;
+}
+
+.between-x, .between-y {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.around-x {
+    justify-content: space-around;
+    align-items: start;
+}
+
+.end-y, .end-x {
+    justify-content: end;
+}
+
+
+/*Estilos*/
+
+button {
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    font-family: inherit;
+}
+
+.btn-base {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 45px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    font-size: 15px;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.5s ease;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+.btn-base:hover, .btn-base.activo {
+    background-color: var(--white);
+    color: #383838;
+}
+
+/*Nav*/
+nav {
+    padding-top: 50px;
+}
+
+nav .logo {
+    max-width: 120px;
+    margin-right: 2rem;
+}
+
+nav h1 {
+    font-size: 42px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+nav h2 {
+    color: #D3CFCB;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav .fecha {
+    width: 263px;
+    height: 124px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #2B2B2B;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fecha .dia {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.fecha .hora {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+
+
+.contenedor-banner {
+    border-radius: 10px;
+    background: linear-gradient(90deg, #F5EF54 0%, #1897B4 100%);
+    display: flex;
+    align-items: center;
+    height: 225px;
+}
+
+.bus {
+    height: 250px;
+}
+
+.banner {
+    margin-top: 30px;
+    width: 575px;
+    max-width: 575px;
+    height: 211px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #2B2B2B;
+    padding: 20px 15px;
+}
+
+.contenedor_logo {
+    text-align: end;
+    width: 184px;
+}
+
+.contenedor_logo img {
+    width: 100%;
+}
+
+.tipo {
+    width: 138px;
+    height: 32px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 1rem;
+}
+
+.tipo.llegada {
+    border: 2px solid #E07912;
+    background: #E07912;
+}
+
+.tipo.salida {
+    border: 2px solid #84C284;
+    background: #84C284;
+}
+
+.bb-1 {
+    border-bottom: 1px solid;
+}
+
+.banner h2 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 0;
+    line-height: 32px;
+}
+
+.banner h3 {
+    font-size: 24px;
+    font-weight: 800;
+    margin-bottom: 0;
+    line-height: 24px;
+}
+
+.divisoria {
+    margin-inline: 1rem;
+    width: 3px;
+    height: 22px;
+    margin-bottom: 4px;
+    background-color: var(--white);
+}
+
+.banner p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.banners-carrusel {
+    overflow: hidden;
+}
+
+/*Main*/
+main {
+    padding-top: 20px;
+}
+
+.buses-section h2 {
+    color: #D3CFCB;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.buses-section {
+    margin-top: 1.5rem;
+    padding: 20px 16px;
+    border-radius: 15px;
+    background: #2B2B2B;
+}
+
+.tipos {
+    width: 330px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: linear-gradient(90deg, #DDA430 0%, #E07912 100%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5px 0 37px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.tipos .salidas {
+    width: 165px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 40px;
+    background: #84C284;
+    box-shadow: 0px 8px 8px 10px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2C1E1E;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+input[type="text"]:not(#buscador):focus, input[type="tel"]:focus, input[type="checkbox"]:focus, 
+input[type="email"]:focus, input[type="password"]:focus, textarea:focus, select:focus, input[type="file"]:focus, input[type="date"]:focus, input[type="time"]:focus {
+    border: 1px solid var(--secundary) !important;
+    box-shadow: 0 0 5px var(--secundary) !important;
+}
+
+input[type="date"] {
+    height: 45px;
+    width: 570px;
+    border-radius: 10px;
+}
+
+.viaje {
+    width: 100%;
+    height: 145px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    background: #343434;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 70px;
+}
+
+.viaje:last-of-type {
+    margin-bottom: 0;
+}
+
+.viaje .contendor-empresa {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 205px;
+    padding: 10px;
+}
+
+.viaje .info {
+    padding: 20px 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.viaje .detalle {
+    width: 300px;
+}
+
+.viaje .linea {
+    width: 5px;
+    height: 103px;
+}
+
+.viaje .linea.salida {
+    background: #84C284;
+}
+
+.viaje .linea.llegada {
+    background: #E07912;
+}
+
+.viaje h3 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.viaje .trayecto {
+    color: #E6E6E6;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.viaje .trayecto {
+    color: #E6E6E6;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+
+.viaje .servicio {
+    color: #A8A8A8;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.viaje .plataforma {
+    border: 2px solid #D4D4D4;
+    color: #D4D4D4;
+    padding: 3px 5px;
+    border-radius: 10px;
+    color: #FFF;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.viaje .tipo {
+    width: 116px;
+    height: 38px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    border: 2px solid #AFAFAF;
+    color: #000;
+    margin-bottom: 0.5rem;
+}
+
+.viaje .tipo.salida {
+    background: #63B593;
+}
+
+.viaje .tipo.llegada {
+    background: #E07912;
+}
+
+.viaje .hora {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.viaje .dia {
+    color: #ECECEC;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+footer {
+    padding: 150px 0;
+}
+
+footer .logo {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-inline: auto;
+}
+
+footer .logo img {
+    width: 250px;
+}
+
+html {
+    width: 100dvw !important;
+    overflow-x: hidden !important;
+}

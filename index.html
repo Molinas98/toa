@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Terminal</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="assets/plugins/fontawesome-pro-5.0.6/css/fontawesome-all.min.css"/>
+    <link rel="stylesheet" href="assets/plugins/slick/slick.css">
+	<link rel="stylesheet" href="assets/plugins/slick/slick-theme.css"/>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/icono.png">
+</head>
+<body>
+	<header>
+		<nav class="between-x flex-nowrap mb-3">
+			<div class="center-x flex-nowrap">
+				<img class="logo" src="assets/img/logo.png" alt="logo terminal">
+				<div>
+					<h1>TOA</h1>
+					<h2>Información de horarios de buses</h2>
+				</div>
+			</div>
+			<div class="fecha">
+				<p class="dia">Lunes, 2 de Marzo, 2025</p>
+				<span class="hora">09:41 a.m</span>
+			</div>
+		</nav>
+	</header>
+    <main>
+		<section class="banner-section">
+			<div class="contenedor-banner">
+				<img class="bus" src="assets/img/others/bus.png" alt="autobus rojo">
+				<div class="banners-carrusel">
+					<div class="banner">
+						<div class="row">
+							<div class="col-7">
+								<div class="d-flex align-items-center bb-1 mb-2 pb-2">
+									<img src="assets/img/icons/bus.svg" alt="icono autobus">
+									<span class="tipo salida">Salida</span>
+								</div>
+								<div class="d-flex align-items-end mb-2">
+									<h2>Bus 01 </h2>
+									<span class="divisoria"></span>
+									<h3>9:05 a.m</h3>
+								</div>
+								<p>Ciudad del Este - Asunción</p>
+								<p>Plataforma A12</p>
+							</div>
+							<div class="col-5 end-x">
+								<div class="contenedor_logo">
+									<img class="img-fluid" src="assets/img/empresas/nsa.png" alt="logo empresa">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="banner">
+						<div class="row">
+							<div class="col-7">
+								<div class="d-flex align-items-center bb-1 mb-2 pb-2">
+									<img src="assets/img/icons/bus.svg" alt="icono autobus">
+									<span class="tipo llegada">Llegada</span>
+								</div>
+								<div class="d-flex align-items-end mb-2">
+									<h2>Bus 05 </h2>
+									<span class="divisoria"></span>
+									<h3>09:41 a.m</h3>
+								</div>
+								<p>Ciudad del Este - Asunción</p>
+								<p>Plataforma A31</p>
+							</div>
+							<div class="col-5 end-x">
+								<div class="contenedor_logo">
+									<img class="img-fluid" src="assets/img/empresas/sol.png" alt="logo empresa">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="buses-section">
+			<div class="between-x flex-nowrap">
+				<div class="d-flex align-items-center">
+					<img class="me-2" src="assets/img/icons/calendar.svg" alt="icono calendario">
+					<h2>Horarios de salidas y llegadas</h2>
+				</div>
+				<div class="tipos">
+					<span>Llegadas</span>
+					<div class="salidas">
+						<span>Salidas</span>
+					</div>
+				</div>
+			</div>
+			<div class="between-x flex-nowrap my-5">
+				<button class="btn-base activo">Todos</button>
+				<input type="date" class="form-control">
+				<button class="btn-base">Hoy</button>
+			</div>
+			<div class="viajes">
+				<div class="viaje">
+					<div class="contendor-empresa">
+						<img class="img-fluid" src="assets/img/empresas/sol.png" alt="">
+					</div>
+					<div class="info">
+						<div class="linea salida"></div>
+						<div class="detalle">
+							<h3>Sol del Paraguay</h3>
+							<p class="trayecto">Asunción - Caazapá</p>
+							<p class="servicio">Tipo de servicio: Directo</p>
+						</div>
+						<span class="plataforma">Plataforma A2</span>
+						<div class="linea salida"></div>
+						<div>
+							<span class="tipo salida mb-3 ms-0">Salida</span>
+							<div class="d-flex align-items-center justify-content-start mb-1">
+								<img class="me-2" src="assets/img/icons/clock.svg" alt="icono reloj">
+								<span class="hora">09:41 a.m</span>
+							</div>
+							<div class="d-flex align-items-center justify-content-start">
+								<img class="me-2" src="assets/img/icons/calendar2.svg" alt="icono calendario">
+								<span class="dia">2 de Marzo</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="viaje">
+					<div class="contendor-empresa">
+						<img class="img-fluid" src="assets/img/empresas/nsa.png" alt="">
+					</div>
+					<div class="info">
+						<div class="linea llegada"></div>
+						<div class="detalle">
+							<h3>Nuestra Señora de la Asunción</h3>
+							<p class="trayecto">Asunción - Caazapá</p>
+							<p class="servicio">Tipo de servicio: Directo</p>
+						</div>
+						<span class="plataforma">Plataforma A2</span>
+						<div class="linea llegada"></div>
+						<div>
+							<span class="tipo llegada mb-3 ms-0">Llegada</span>
+							<div class="d-flex align-items-center justify-content-start mb-1">
+								<img class="me-2" src="assets/img/icons/clock.svg" alt="icono reloj">
+								<span class="hora">09:41 a.m</span>
+							</div>
+							<div class="d-flex align-items-center justify-content-start">
+								<img class="me-2" src="assets/img/icons/calendar2.svg" alt="icono calendario">
+								<span class="dia">2 de Marzo</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="viaje">
+					<div class="contendor-empresa">
+						<img class="img-fluid" src="assets/img/empresas/sol.png" alt="">
+					</div>
+					<div class="info">
+						<div class="linea salida"></div>
+						<div class="detalle">
+							<h3>Sol del Paraguay</h3>
+							<p class="trayecto">Asunción - Caazapá</p>
+							<p class="servicio">Tipo de servicio: Directo</p>
+						</div>
+						<span class="plataforma">Plataforma A2</span>
+						<div class="linea salida"></div>
+						<div>
+							<span class="tipo salida mb-3 ms-0">Salida</span>
+							<div class="d-flex align-items-center justify-content-start mb-1">
+								<img class="me-2" src="assets/img/icons/clock.svg" alt="icono reloj">
+								<span class="hora">09:41 a.m</span>
+							</div>
+							<div class="d-flex align-items-center justify-content-start">
+								<img class="me-2" src="assets/img/icons/calendar2.svg" alt="icono calendario">
+								<span class="dia">2 de Marzo</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="viaje">
+					<div class="contendor-empresa">
+						<img class="img-fluid" src="assets/img/empresas/nsa.png" alt="">
+					</div>
+					<div class="info">
+						<div class="linea llegada"></div>
+						<div class="detalle">
+							<h3>Nuestra Señora de la Asunción</h3>
+							<p class="trayecto">Asunción - Caazapá</p>
+							<p class="servicio">Tipo de servicio: Directo</p>
+						</div>
+						<span class="plataforma">Plataforma A2</span>
+						<div class="linea llegada"></div>
+						<div>
+							<span class="tipo llegada mb-3 ms-0">Llegada</span>
+							<div class="d-flex align-items-center justify-content-start mb-1">
+								<img class="me-2" src="assets/img/icons/clock.svg" alt="icono reloj">
+								<span class="hora">09:41 a.m</span>
+							</div>
+							<div class="d-flex align-items-center justify-content-start">
+								<img class="me-2" src="assets/img/icons/calendar2.svg" alt="icono calendario">
+								<span class="dia">2 de Marzo</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="viaje">
+					<div class="contendor-empresa">
+						<img class="img-fluid" src="assets/img/empresas/sol.png" alt="">
+					</div>
+					<div class="info">
+						<div class="linea salida"></div>
+						<div class="detalle">
+							<h3>Sol del Paraguay</h3>
+							<p class="trayecto">Asunción - Caazapá</p>
+							<p class="servicio">Tipo de servicio: Directo</p>
+						</div>
+						<span class="plataforma">Plataforma A2</span>
+						<div class="linea salida"></div>
+						<div>
+							<span class="tipo salida mb-3 ms-0">Salida</span>
+							<div class="d-flex align-items-center justify-content-start mb-1">
+								<img class="me-2" src="assets/img/icons/clock.svg" alt="icono reloj">
+								<span class="hora">09:41 a.m</span>
+							</div>
+							<div class="d-flex align-items-center justify-content-start">
+								<img class="me-2" src="assets/img/icons/calendar2.svg" alt="icono calendario">
+								<span class="dia">2 de Marzo</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer>
+			<div class="logo">
+				<img src="assets/img/logo.png" alt="icono logo">
+			</div>
+		</footer>
+    </main>
+	<script src="assets/js/jquery-3.6.0.min.js"></script>
+	<script src="assets/js/bootstrap.bundle.min.js"></script>
+	<script src="assets/plugins/slick/slick.js"></script>
+	<script src="assets/js/carrusel.js"></script>
+	<!--Selected personalizado-->
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/bootstrap-select.min.js"></script>
+</body>
+</html>
